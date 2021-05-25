@@ -2,11 +2,14 @@ import React from 'react'
 import { connect } from 'react-redux';
 import { addToCart, removeFromCart, isInCart } from '../redux/cart';
 
+import { FaTrash, FaHeart } from "react-icons/fa";
+
+
 
 
 const Product = ({image}) => {
     return (
-        <div className='row'>
+        <div className='row mb-4'>
             <div className="col-md-3">
                 <img className='img-fluid' alt='item' src='https://dynamic.zacdn.com/kD7YMiEN0_SsTE5Y3PQotc6rPDY=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/hm-2991-5323572-1.jpg' />
             </div>
@@ -18,16 +21,16 @@ const Product = ({image}) => {
                             <p>Color: Blue</p>
                             <p>Size: M</p>
                         </div>
-                        <div className="row justify-content-between">
-                        <button className="col btn">Remove Item</button>
-                        <button className="col btn">Remove Isdsdstem</button>
+                        <div className="text-left">
+                        <button className="col btn"><FaTrash /> Remove Item</button>
+                        <button className="col btn"><FaHeart /> Wishlist</button>
 
                         </div>
                     </div>
                     <div className="row pb-5 align-items-start">
-                        <button className='col btn btn-outline-secondary'>-</button>
-                        <button className='col btn btn-outline-secondary'>1</button>
-                        <button className='col btn btn-outline-secondary'>+</button>
+                        <button className='col btn btn-outline-secondary btn-sm'>-</button>
+                        <button className='col btn btn-outline-secondary btn-sm'>1</button>
+                        <button className='col btn btn-outline-secondary btn-sm'>+</button>
                         
                     </div>
                 </div>

@@ -16,7 +16,7 @@ function App() {
                   <div className="card col-md-7">                                       
                     <ProductList />                    
                   </div>
-                  <div className="card col-md-4 align-self">                    
+                  <div className="card col-md-4">                    
                     <Cart />
                   </div>
                                    
