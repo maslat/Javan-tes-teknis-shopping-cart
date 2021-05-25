@@ -21,11 +21,6 @@ const Product = ({image}) => {
                             <p>Color: Blue</p>
                             <p>Size: M</p>
                         </div>
-                        <div className="text-left">
-                        <button className="col btn"><FaTrash /> Remove Item</button>
-                        <button className="col btn"><FaHeart /> Wishlist</button>
-
-                        </div>
                     </div>
                     <div className="row pb-5 align-items-start">
                         <button className='col btn btn-outline-secondary btn-sm'>-</button>
@@ -33,6 +28,13 @@ const Product = ({image}) => {
                         <button className='col btn btn-outline-secondary btn-sm'>+</button>
                         
                     </div>
+                </div>
+                <div className="d-flex justify-content-between mt-2">
+                    <div className="">
+                        <button className="btn"><FaTrash /> Remove Item</button>
+                        <button className="btn"><FaHeart /> Add to Wishlist</button>
+                    </div>
+                    <p>$29.98</p>
                 </div>
             </div>
         </div>
